@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__top d-flex justify-content-between">
+            <p class="header__top-left">Новокузнечный переулок 4/1</p>
+            <p class="header__top-right">8 (812) 123-45-67</p>
+        </div>
+
+        <nav class="header__nav">
+            <div class="row">
+              <div class="header__menu-item col-3"><a href="#" class="header__menu-link">Каталог</a></div>
+              <div class="header__menu-item col-3"><a href="#" class="header__menu-link">Доставка</a></div>
+              <div class="header__menu-item col-3"><a href="#" class="header__menu-link">Коллекции</a></div>
+              <div class="header__menu-item col-3"><a href="#" class="header__menu-link">Контакты</a></div>
+            </div>
+        </nav>
+
+        <div class="header__box">
+            <button class="header__btn1">винная карта</button>
+            <button class="header__btn2">дегустация</button>
+        </div>
+    </div>
+</header>
+<section class="history">
+    <div class="container box">
+        <h2 class="history__title">Лучший вкус, это вкус долголетнего вина</h2>
+        <p class="history__sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. Mauris dictumst risus pulvinar blandit elit. Vestibulum quam ultrices nascetur et viverra suscipit. Proin vitae aliquet leo aliquam amet rutrum. Lectus auctor purus ultrices enim ultrices. Augue fringilla tellus tortor orci ultrices sed. Viverra cras sapien, pellentesque viverra malesuada. Tellus dolor, eget vitae dignissim molestie eget sit duis. Vitae dui vel pretium euismod diam. Pellentesque amet, lacus, amet, quis risus. Pellentesque scelerisque nunc, orci aliquam quis.</p>
+        <div class="history__img d-flex justify-content-center"><img src="./src/images/history/image.svg" alt="vine"></div>
+    </div>
+</section>
+<section class="news">
+    <div class="container">
+        <div class="row">
+    <div class="col-6">
+        <p class="news__open">Новинки коллекций</p>
+        <h2 class="news__title">Март 1980 Урожай Марселя</h2>
+        <p class="news__sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
+        <div class="news__catalog">
+            <div class="news__catalog-info d-flex">
+            <p class="news__catalog-date">1980</p>
+            <div class="news__catalog-text">
+                <h3 class="news__catalog_title">Colli Euganei Bianco Ca' Lustra 1980</h3>
+                <p class="news__catalog_sub">Красочная бутылка вина из Марселя</p></div>
+            </div>
+
+            <div class="news__catalog-info d-flex">
+            <p class="news__catalog-date">1980</p>
+            <div class="news__catalog-text">
+                <h3 class="news__catalog_title">Colli Euganei Bianco Ca' Lustra 1980</h3>
+                <p class="news__catalog_sub">Красочная бутылка вина из Марселя</p>
+            </div>
+            </div>
+
+            <div class="news__catalog-info d-flex">
+            <p class="news__catalog-date">1980</p>
+            <div class="news__catalog-text">
+                <h3 class="news__catalog_title">Colli Euganei Bianco Ca' Lustra 1980</h3>
+                <p class="news__catalog_sub">Красочная бутылка вина из Марселя</p>
+            </div>
+            </div>
+        </div>
+        <p class="news__sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
+        <button class="news__btn">узнать подробнее</button>
+    </div>
+    <div class="col-6 d-flex flex-wrap col-6-img">
+        <img src="./src/images/news/Rectangle%2011.png" alt="first">
+        <img src="./src/images/news/Rectangle%2012.png" alt="second" class="news__img">
+        <img src="./src/images/news/Rectangle%2013.png" alt="third" class="news__img-third">
+    </div>
+        </div>
+    </div>
+</section>
+<section class="form">
+    <div class="container">
+        <div class="form__block">
+            <div class="form__title-block"><h2 class="form__title">Запись на дегустацию</h2></div>
+            <img src="./src/images/form/image%20(1).png" alt="grapes" class="form__left-img">
+            <img src="./src/images/form/image%20(2).png" alt="box" class="form__right-img">
+            <p class="form__sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. </p>
+            <form class="form__info">
+                <label class="form__info-label">
+                    <input type="text" placeholder="Имя" class="form__info-input" required>
+                </label>
+                <label class="form__info-label">
+                    <input type="tel" placeholder="Телефон" class="form__info-input" required>
+                </label>
+                <label class="form__info-label">
+                    <input list="catalogs" name="catalogs" placeholder="Бутик на Невском 103" class="form__info-input form__info-input-last" required>
+                </label>
+                <datalist id="catalogs" class="form__info-datalist">
+                    <option value="Бутик на Невском 103"></option>
+                    <option value="Бутик на Московской 22"></option>
+                    <option value="Бутик на Ленина 108"></option>
+                    <option value="Бутик на Советской 7"></option>
+                    <option value="Бутик на Ломоносова 56"></option>
+                    <option value="Бутик на Некрасова 08"></option>
+                </datalist>
+                <button class="form__info-btn">записаться</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <nav class="footer__nav">
+            <a href="#" class="footer__nav-link">Главная</a>
+            <a href="#" class="footer__nav-link">Каталог</a>
+            <a href="#" class="footer__nav-link">Поставщики</a>
+            <a href="#" class="footer__nav-link">Коллекции</a>
+            <a href="#" class="footer__nav-link">Дегустация</a>
+            <a href="#" class="footer__nav-link">Коллекция 2020</a>
+            <a href="#" class="footer__nav-link">Контакты</a>
+        </nav>
+
+    </div>
+</section>
+<script src="src/libs/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>

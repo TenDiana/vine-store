@@ -1,0 +1,23 @@
+@import "../libs/bootstrap/bootstrap-grid.min.css";
+@import "../libs/montserrat/stylesheet.css";
+@import "../libs/PlayfairDisplay/stylesheet.css";
+
+
+@import "btn";
+@import "text";
+@import "header";
+@import "history";
+@import "news";
+@import "form";
+@import "footer";
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 1110px;
+  margin: 0 auto;
+}

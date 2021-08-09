@@ -1,0 +1,80 @@
+.form{
+  padding: 129px 0 100px;
+  background: #282828;
+  &__block{
+    position: relative;
+    border: 2px solid #C4C4C4;
+    width: 100%;
+  }
+  &__title-block{
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 490px;
+    height: 74px;
+    background: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before{
+      position: absolute;
+      content: '';
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 118px;
+      height: 1px;
+      background: #FFFFFF;
+    }
+  }
+  &__title{
+    @include text(Playfair Display, bold, 36px, 150%, #FFFFFF);
+  }
+  &__left-img{
+    position: absolute;
+    top: -69px;
+    left: -30px;
+  }
+  &__right-img{
+    position: absolute;
+    top: -65px;
+    right: -53px;
+  }
+  &__sub{
+    @include text(Montserrat, normal, 16px, 150%, #FFFFFF);
+    margin: 105px auto 81px;
+    width: 539px;
+  }
+  &__info{
+    margin: 0 auto;
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-input{
+      width: 255px;
+      height: 30px;
+      background: #282828;
+      color: white;
+      border: none;
+      outline: none;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #FFFFFF;
+      &::placeholder{
+        @include text(Montserrat, 500, 13px, 150%, #FFFFFF);
+        text-align: start;
+      }
+    }
+    &-input-last{
+      width: 540px;
+    }
+    &-btn{
+      @include btn(541px, #282828);
+      border: 1px solid #FFFFFF;
+      margin-bottom: 80px;
+    }
+  }
+
+}
